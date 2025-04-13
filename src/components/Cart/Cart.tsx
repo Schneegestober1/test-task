@@ -1,15 +1,15 @@
-import React from "react";
-import styles from "../Cart/cart.module.scss";
-import BinIcon from "../../assets/icons/Bin";
-import PlusIcon from "../../assets/icons/PlusIcon";
-import MinusIcon from "../../assets/icons/MinusIcon";
-import { useCart } from "../Context/CartContext";
+import React from "react"
+import styles from "../Cart/cart.module.scss"
+import BinIcon from "../../assets/icons/Bin"
+import PlusIcon from "../../assets/icons/PlusIcon"
+import MinusIcon from "../../assets/icons/MinusIcon"
+import { useCart } from "../hooks/useCart"
 
 const Cart: React.FC = () => {
-  const { cart, increaseQuantity, decreaseQuantity, removeFromCart } = useCart();
+  const { cart, increaseQuantity, decreaseQuantity, removeFromCart } = useCart()
 
 
-  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0)
 
   return (
     <section>

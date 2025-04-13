@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../Card/card.module.scss"
 import StarIcon from "../../assets/icons/StartIcon"
 import Button from "../UI/Button/Button"
-import { useCart } from "../Context/CartContext"
+import { useCart } from "../hooks/useCart"
 
 interface CardProps {
   id: number;
@@ -17,7 +17,8 @@ const Card: React.FC<CardProps> = ({ id, title, image, price, oldPrice, rating }
   const { addToCart } = useCart()
   const handleBuy = () => {
     addToCart({ id, title, price, image })
-  };
+  }
+
   return (
     <section key={id} className={styles.card}>
       <div className={styles.imgWrapper}>

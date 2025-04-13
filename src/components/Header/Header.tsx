@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import CartIcon from "../../assets/icons/CartIcon"
 import LikeIcon from "../../assets/icons/LikeIcon"
 import styles from "../Header/header.module.scss"
-import { useCart } from "../Context/CartContext"
+import { useCart } from "../hooks/useCart"
 
 const Header = () => {
 	const { cart } = useCart()
@@ -22,7 +22,6 @@ const Header = () => {
 					<CartIcon width="22" height="20" aria-label="Корзина"/>
 					<div className={styles.badge}><span>{cartCount}</span></div>
 				</Link>
-				
 			</nav>
 		</header>
 	)
