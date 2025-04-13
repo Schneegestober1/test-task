@@ -6,8 +6,8 @@ import { useCart } from "../Context/CartContext"
 
 const Header = () => {
 	const { cart } = useCart()
-
 	const cartCount = cart.reduce((acc, item) => acc + item.quantity, 0)
+
 	return (
 		<header className={styles.header}>
 			<Link to="/" className={styles.title}>

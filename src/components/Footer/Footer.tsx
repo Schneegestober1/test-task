@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 import LangIcon from "../../assets/icons/LangIcon"
 import TelegramIcon from "../../assets/icons/TelegramIcon"
-import VKIcon from "../../assets/icons/VKIcon";
+import VKIcon from "../../assets/icons/VKIcon"
 import WhatsAppIcon from "../../assets/icons/WhatsAppIcon"
 import styles from "../Footer/footer.module.scss"
 
@@ -9,7 +9,7 @@ const footerLinks = [
   { id: 1, name: "Избранное", href: "/favorites" },
   { id: 2, name: "Корзина", href: "/cart" },
   { id: 3, name: "Контакты", href: "/contacts" },
-];
+]
 
 export const Footer = () => {
   return (

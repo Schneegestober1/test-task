@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../Card/card.module.scss"
 import StarIcon from "../../assets/icons/StartIcon"
 import Button from "../UI/Button/Button"
-import { useCart } from "../Context/CartContext";
+import { useCart } from "../Context/CartContext"
 
 interface CardProps {
   id: number;
