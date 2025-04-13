@@ -1,0 +1,16 @@
+{
+  "wiredHeadphones": [
+    { "id": "1", "title": "Apple BYZ S852I", "price": 2927, "rating": 4.7, "oldPrice": 3527, "image": "/public/img/item1.png" },
+    { "id": "2", "title": "Apple EarPods", "price": 2327, "rating": 4.5, "image": "/public/img//item2.png"},
+    { "id": "3", "title": "Apple EarPods", "price": 2327, "rating": 4.5, "image": "/public/img//item3.png"},
+    { "id": "4", "title": "Apple BYZ S852I", "price": 2927, "rating": 4.7, "image": "/public/img/item1.png" },
+    { "id": "5", "title": "Apple EarPods", "price": 2327, "rating": 4.5, "image": "/public/img//item2.png"},
+    { "id": "6", "title": "Apple EarPods", "price": 2327, "rating": 4.5, "image": "/public/img//item3.png"}
+  ],
+  "wirelessHeadphones": [
+      { "id": "1", "title": "Apple AirPods", "price": 9527, "rating": 4.7, "image": "/public/img//item7.png"},
+      { "id": "2", "title": "GERLAX GH-04", "price": 6527, "rating": 4.7, "image": "/public/img//item8.png" },
+      { "id": "3", "title": "BOROFONE BO4", "price": 7527, "rating": 4.7,  "image": "/public/img//item9.png" }
+  ]
+}
+

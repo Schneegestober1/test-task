@@ -1,0 +1,170 @@
+.pageTitle {
+    margin-top: 29px;
+    width: 327px;
+    top: 88px;
+    left: 165px;
+    font-weight: 600;
+    color: #1c1c27;
+    font-size: 20px;
+  }
+  
+  .card {
+    width: 639px;
+    height: 218px;
+    top: 126px;
+    left: 165px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 280px;
+  
+    &Content {
+      padding: 0;
+      height: 100%;
+      position: relative;
+    }
+  
+    &Image {
+      position: absolute;
+      width: 147px;
+      height: 136px;
+      top: 18px;
+      left: 19px;
+      object-fit: cover;
+    }
+  
+    &Name {
+      position: absolute;
+      width: 396px;
+      top: 76px;
+      left: 189px;
+      font-weight: 500;
+      color: #1c1c27;
+      font-size: 17px;
+    }
+  
+    &Price {
+      position: absolute;
+      width: 396px;
+      top: 109px;
+      left: 189px;
+      font-weight: 600;
+      color: #aaaaaa;
+      font-size: 15px;
+    }
+  
+    &Total {
+      position: absolute;
+      width: 101px;
+      top: 179px;
+      left: 504px;
+      font-weight: 600;
+      color: #1c1c27;
+      font-size: 15px;
+      text-align: right;
+    }
+  }
+  
+  .quantity {
+    position: absolute;
+    width: 120px;
+    top: 173px;
+    left: 33px;
+    display: flex;
+    align-items: center;
+  
+    &Button {
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      background-color: #FFCE7F;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &:active {
+        scale: 1.1;
+      }
+    }
+  
+    &Value {
+      margin: 0 24px;
+      font-weight: 600;
+      color: black;
+      font-size: 17px;
+    }
+  }
+  
+  .deleteButton {
+    position: absolute;
+    width: 20px;
+    height: 17px;
+    top: 18px;
+    right: 25px;
+    padding: 0;
+    cursor: pointer;
+    &:active {
+      scale: 1.1;
+    }
+  }
+  
+  .summary {
+    position: absolute;
+    width: 350px;
+    height: 120px;
+    top: 133px;
+    left: 925px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  
+    &Content {
+      padding: 0;
+      height: 100%;
+      position: relative;
+    }
+  
+    &Total {
+      position: absolute;
+      width: 315px;
+      height: 19px;
+      top: 21px;
+      left: 21px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      span {
+        font-weight: 600;
+        color: black;
+        font-size: 15px;
+      }
+    }
+  
+    &Button {
+      position: absolute;
+      width: 349px;
+      height: 65px;
+      bottom: 0;
+      left: 0;
+      background-color: #0f0f0f;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+      font-weight: 600;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.01);
+        background-color: #FFCE7F;
+        color: #0f0f0f;
+      }
+      &:active {
+        scale: 1.05;
+      }
+    }
+  }
+  
+  
