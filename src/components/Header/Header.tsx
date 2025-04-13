@@ -2,8 +2,12 @@ import { Link } from "react-router-dom"
 import CartIcon from "../../assets/icons/CartIcon"
 import LikeIcon from "../../assets/icons/LikeIcon"
 import styles from "../Header/header.module.scss"
+import { useCart } from "../Context/CartContext"
 
 const Header = () => {
+	const { cart } = useCart()
+
+	const cartCount = cart.reduce((acc, item) => acc + item.quantity, 0)
 	return (
 		<header className={styles.header}>
 			<Link to="/" className={styles.title}>
@@ -16,7 +20,7 @@ const Header = () => {
 				</Link>
 				<Link to={"/cart"}  className={styles.iconWrapper}>
 					<CartIcon width="22" height="20" aria-label="Корзина"/>
-					<div className={styles.badge}><span>1</span></div>
+					<div className={styles.badge}><span>{cartCount}</span></div>
 				</Link>
 				
 			</nav>

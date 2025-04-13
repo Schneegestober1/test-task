@@ -7,6 +7,10 @@
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;   
+    -ms-user-select: none;   
+    user-select: none;  
 }
 
 .card:hover {

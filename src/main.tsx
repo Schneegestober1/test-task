@@ -4,10 +4,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import HomePage from './pages/Home/HomePage';
-import { Provider } from './Provider';
-import Cart from './components/Cart/Cart';
-import Layout from './components/Layout/Layout';
+import HomePage from './pages/Home/HomePage'
+import { Provider } from './Provider'
+import Cart from './components/Cart/Cart'
+import Layout from './components/Layout/Layout'
+import { CartProvider } from './components/Context/CartContext'
+import styles from "../src/components/Cart/cart.module.scss"
 
 const router = createBrowserRouter([
   {
@@ -24,15 +26,15 @@ const router = createBrowserRouter([
       },
       {
         path: "contacts",
-        element: <div style={{ color: "green" }}>Contacts</div>,
+        element: <h3 className={styles.pageTitle}>Контакты</h3>,
       },
       {
         path: "favorites",
-        element: <div style={{ color: "blue" }}>Favorites</div>,
+        element: <h3 className={styles.pageTitle}>Избранное</h3>,
       },
       {
         path: "terms-of-service",
-        element: <div style={{ color: "orange" }}>Terms Of Service</div>,
+        element: <h3 className={styles.pageTitle}>Условия сервиса</h3>,
       },
     ],
   },
@@ -40,7 +42,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider>
-      <RouterProvider router={router} />
+      <CartProvider>
+        <RouterProvider router={router} />
+      </CartProvider>
     </Provider>
   </StrictMode>,
 )
