@@ -29,6 +29,7 @@ const Cart: React.FC = () => {
             <div className={styles.cardTotal}>{item.price * item.quantity} ₽</div>
 
             <div className={styles.quantity}>
+
               <div className={styles.quantityButton} onClick={() => decreaseQuantity(item.id)}>
                 <MinusIcon />
               </div>
@@ -38,6 +39,7 @@ const Cart: React.FC = () => {
               <div className={styles.quantityButton}  onClick={() => increaseQuantity(item.id)}>
                 <PlusIcon />
               </div>
+              
             </div>
 
             <div className={styles.deleteButton} onClick={() => removeFromCart(item.id)}>

@@ -37,13 +37,7 @@ const Card: React.FC<CardProps> = ({ id, title, image, price, oldPrice, rating }
             <StarIcon width={23} height={21} />
             <span className={styles.rating}>{rating}</span>
           </div>
-          <Button
-            className={styles.button}
-            onClick={handleBuy}
-            aria-label={`Купить ${title}`}
-          >
-            Купить
-          </Button>
+          <Button className={styles.button} onClick={handleBuy} aria-label={`Купить ${title}`}>Купить</Button>
         </div>
       </div>
     </section>
