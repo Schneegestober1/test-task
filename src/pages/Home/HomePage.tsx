@@ -9,7 +9,7 @@ function HomePage() {
     queryFn: () => headphonesService.getWiredHeadphones()
   });
 
-  const { data: wirelessHeadphones,  isLoading: isWirelessLoading, isError: isWirelessError, error: wirelessError} = useQuery({
+  const { data: wirelessHeadphones, isLoading: isWirelessLoading, isError: isWirelessError, error: wirelessError} = useQuery({
     queryKey: ['wirelessHeadphones list'],
     queryFn: () => headphonesService.getWiredlessHeadphones()
   });
