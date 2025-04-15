@@ -7,8 +7,6 @@ import { useCart } from "../hooks/useCart"
 
 const Cart: React.FC = () => {
   const { cart, increaseQuantity, decreaseQuantity, removeFromCart } = useCart()
-
-
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0)
 
   return (
@@ -65,4 +63,4 @@ const Cart: React.FC = () => {
   );
 };
 
-export default Cart;
+export default Cart
