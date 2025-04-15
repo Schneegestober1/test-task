@@ -19,11 +19,19 @@
 		>.content {
 			padding: 32px 29px;
 			display: flex;
-			flex-direction: column;
+			// flex-direction: column;
 			justify-content: space-between;
+			flex-direction: row;
 
-			@media (min-width: 768px) {
+			@media (max-width: 768px) {
 				flex-direction: row;
+				justify-content: center;
+				flex-wrap: wrap
+			}
+			@media (max-width: 425px) {
+				flex-direction: row;
+				justify-content: center;
+				flex-wrap: wrap
 			}
 		}
 		.logo {
@@ -41,11 +49,16 @@
 		}
 		.nav {
 			display: flex;
-			flex-direction: column;
+			// flex-direction: column;
 			gap: 174px;
+			flex-direction: row;
 		
-			@media (min-width: 768px) {
+			@media (min-width: 769px) {
 				flex-direction: row;
+			}
+			@media (max-width: 426px) {
+				flex-direction: row;
+				gap: 20px;
 			}
 	  }
 		.links {

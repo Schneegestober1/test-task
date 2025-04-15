@@ -17,7 +17,17 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background-color: white;
     margin-bottom: 20px;
-  
+    @media (max-width: 1025px) {
+      width: 432px;
+    }
+    @media (max-width: 788px) {
+      width: 306px;
+    }
+    @media (max-width: 426px) {
+      width: 190px;
+    }
+    
+
     &Content {
       padding: 0;
       height: 100%;
@@ -31,6 +41,13 @@
       top: 18px;
       left: 19px;
       object-fit: cover;
+      @media (max-width: 788px) {
+        width: 100px;
+        object-fit: contain;
+      }
+      @media (max-width: 426px) {
+        width: 75px;
+      }
     }
   
     &Name {
@@ -41,6 +58,15 @@
       font-weight: 500;
       color: #1c1c27;
       font-size: 17px;
+      @media (max-width: 788px) {
+        left: 140px;
+        font-size: 14px;
+      }
+      @media (max-width: 426px) {
+        width: 80px;
+        font-size: 10px;
+        left: 120px;
+      }
     }
   
     &Price {
@@ -51,6 +77,15 @@
       font-weight: 600;
       color: #aaaaaa;
       font-size: 15px;
+      @media (max-width: 788px) {
+        left: 140px;
+        font-size: 14px;
+      }
+      @media (max-width: 426px) {
+        width: 80px;
+        font-size: 10px;
+        left: 120px;
+      }
     }
   
     &Total {
@@ -62,7 +97,20 @@
       color: #1c1c27;
       font-size: 15px;
       text-align: right;
+      @media (max-width: 1025px) {
+        left: 308px;
+      }
+      @media (max-width: 788px) {
+        left: 180px;
+        font-size: 14px;
+      }
+      @media (max-width: 426px) {
+        width: 80px;
+        font-size: 10px;
+        left: 88px;
+      }
     }
+    
   }
   
   .quantity {
@@ -72,6 +120,10 @@
     left: 33px;
     display: flex;
     align-items: center;
+    @media (max-width: 788px) {
+      left: 12px;
+      font-size: 14px;
+    }
   
     &Button {
       width: 30px;
@@ -83,6 +135,10 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      @media (max-width: 426px) {
+        width: 20px;
+        height: 20px;
+      }
 
 
       &:active {
@@ -124,6 +180,18 @@
     -moz-user-select: none;   
     -ms-user-select: none;   
     user-select: none;
+    @media (max-width: 1024px) {
+      left: 600px;
+    }
+    @media (max-width: 788px) {
+      width: 200px;
+      left: 440px;
+    }
+    @media (max-width: 426px) {
+      width: 150px;
+      left: 261px;
+    }
+    
     
   
     &Content {
@@ -142,11 +210,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 788px) {
+        width: 155px;
+      }
+      @media (max-width: 426px) {
+        width: 112px;
+      }
+
   
       span {
         font-weight: 600;
         color: black;
         font-size: 15px;
+        @media (max-width: 426px) {
+        font-size: 11px;
+        }
       }
     }
   
@@ -164,6 +242,13 @@
       font-size: 17px;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      @media (max-width: 788px) {
+        width: 200px;
+      }
+      @media (max-width: 426px) {
+        width: 150px;
+        font-size: 13px
+      }
       &:hover {
         transform: scale(1.01);
         background-color: #FFCE7F;
@@ -174,5 +259,5 @@
       }
     }
   }
-  
+
   

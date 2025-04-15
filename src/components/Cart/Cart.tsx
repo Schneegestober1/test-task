@@ -12,7 +12,7 @@ const Cart: React.FC = () => {
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0)
 
   return (
-    <section>
+    <section className={styles.cart}>
       <h2 className={styles.pageTitle}>Корзина</h2>
 
       {cart.map((item) => (
