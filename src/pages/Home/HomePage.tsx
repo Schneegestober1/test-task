@@ -4,7 +4,7 @@ import { headphonesService } from '../../services/headphones.service'
 import { useQuery } from '@tanstack/react-query'
 
 function HomePage() {
-  const { data: wiredHeadphones, isLoading: isWiredLoading, isError: isWiredError,error: wiredError } = useQuery({
+  const { data: wiredHeadphones, isLoading: isWiredLoading, isError: isWiredError, error: wiredError } = useQuery({
     queryKey: ['wiredHeadphones list'],
     queryFn: () => headphonesService.getWiredHeadphones()
   });
