@@ -38,12 +38,14 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: "/test-task"
+});
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Provider>
+    <Provider >
       <CartProvider>
-        <RouterProvider router={router} />
+        <RouterProvider router={router}  />
       </CartProvider>
     </Provider>
   </StrictMode>,
